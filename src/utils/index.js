@@ -1,7 +1,7 @@
 // Olivier Paspuel 
 const assertFiniteNumber = (value) => {
     if (!Number.isFinite(value)) {
-        throw new TypeError(`Value must be a finite number`);
+        throw new TypeError('Value must be a finite number');
     }
 };
 
@@ -29,7 +29,7 @@ const toFahrenheit = (c) => {
 // Olivier Paspuel
 const movingAverage = (series, window) => {
     if (!Array.isArray(series)) {
-        throw new TypeError("series must be an array");
+        throw new TypeError('series must be an array');
     }
 
     series.forEach((value, index) => {
