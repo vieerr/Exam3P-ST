@@ -11,6 +11,7 @@ module.exports = [
       'no-console': 'off',
     },
   },
+  // Olivier Paspuel
   {
     files: ['**/__tests__/**/*.js', '**/*.test.js'],
     languageOptions: {

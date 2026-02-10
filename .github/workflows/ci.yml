@@ -1,5 +1,6 @@
 name: CI
 
+# Olivier Paspuel
 on:
   push:
     branches: [main]
