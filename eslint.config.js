@@ -9,6 +9,8 @@ module.exports = [
     },
     rules: {
       'no-console': 'off',
+      'semi': 'error',
+      'quotes': ['error', 'single'],
     },
   },
   // Olivier Paspuel
