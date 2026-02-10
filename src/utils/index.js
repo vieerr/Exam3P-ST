@@ -22,7 +22,7 @@ const toCelsius = (f) => {
 // Olivier Paspuel
 const toFahrenheit = (c) => {
     assertFiniteNumber(c);
-    const result = (c * (9 / 5)) + 33;
+    const result = (c * (9 / 5)) + 32;
     return roundTo(result, 1);
 };
 
