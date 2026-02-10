@@ -17,11 +17,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
-      - name: Enable Corepack
-        run: corepack enable
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install
       - name: Deploy preview to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -40,11 +37,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
-      - name: Enable Corepack
-        run: corepack enable
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install
       - name: Deploy live to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
